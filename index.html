@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week Two Assignment</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file. -->
+</head>
+<body>
+    <h1>Week Two Assignment</h1>
+    <p>This is a simple HTML page created for the week two assignment.</p>
+    <p>Here are some of the topics we covered:</p>
+    <!-- Ordered list with Roman numerals. -->
+    <ol type="i">
+        <li>Forms Attributes</li>
+        <li>Enhancing Content</li>
+        <li>Building and Managing forms</li>
+    </ol>
+    <p>We also learned about:</p>
+    <ul type="disc">
+        <li>Images 
+            <ul>
+                <li>Internal Images</li>
+                <li>External Images</li>
+            </ul>
+        </li>
+    </ul>
+     <!-- External image from pexels.com. -->
+    <p>The following is an exaternal image from pexels.com</p>
+    <img src="https://images.pexels.com/photos/1234567/pexels-photo-1234567.jpeg" alt="Sample Image" width="300" height="200">
+    <p>We also learned about:</p>
+    <ul type="circle">
+        <li>Tables
+            <ul>
+                <li>Table Headers</li>
+                <li>Table Rows</li>
+                <li>Table Data</li> 
+            </ul>
+        </li>
+    </ul>
+     <!-- Table of 5 contacts with; name, address, mobile and emails. -->
+    <p>Here is a simple table:</p>
+    <table border="1" cellpadding="5" cellspacing="0">
+        <caption>Sample Table</caption>
+        <thead>
+            <tr>
+                <th colspan="4">User Information</th>
+            </tr>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>22 Nairobi</td>
+            <td>0722222200</td>
+            <td>john@doe.com</td>
+        </tr>
+        <tr>
+            <td>Regina Anne</td>
+            <td>13 Kisumu</td>
+            <td>0711111100</td>
+            <td>regina@anne.com</td>
+        </tr>
+        <tr>
+            <td>Peter Michael</td>
+            <td>18 Nairobi</td>
+            <td>0712121212</td>
+            <td>peter@michael.com</td>
+        </tr>
+        <tr>
+            <td>Suzan Suzzie</td>
+            <td>18 Mombasa</td>
+            <td>0700000012</td>
+            <td>suzzie@suzan.com</td>
+        </tr>
+        <tr>
+            <td>Angel Purity</td>
+            <td>15 Bondo</td>
+            <td>0733333322</td>
+            <td>angel@purity.com</td>
+        </tr>
+    </table>
+    <p>Finally, we learned about Forms.</p>
+    <p>Here is a simple form:</p>
+    <!-- Registration Form -->
+    <div style="border: 2px solid black; padding: 15px; width: 50%; margin: auto;">
+        <form action="/submit" method="post">
+            <!-- Name Field -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required pattern="[A-Za-z\s]+" title="Name should only contain letters and spaces.">
+            <br><br>
+
+            <!-- Email Field -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br><br>
+
+            <!-- Password Field -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="8" title="Password must be at least 8 characters long.">
+            <br><br>
+
+            <!-- Date of Birth Field -->
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <br><br>
+
+            <!-- Gender Radio Buttons -->
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+            <br><br>
+
+            <!-- Country Dropdown -->
+            <label for="county">County:</label>
+            <select id="county" name="county" required>
+                <option value="" disabled selected>Select your county</option>
+                <option value="nairobi">Nairobi</option>
+                <option value="kiambu">Kiambu</option>
+                <option value="kisumu">Kisumu</option>
+                <option value="mombasa">Mombasa</option>
+                <option value="garisa">Garisa</option>
+            </select>
+            <br><br>
+
+            <!-- Interests Checkboxes -->
+            <label>Interests:</label>
+            <input type="checkbox" id="sports" name="interests" value="sports">
+            <label for="sports">Sports</label>
+            <input type="checkbox" id="music" name="interests" value="music">
+            <label for="music">Music</label>
+            <input type="checkbox" id="travel" name="interests" value="travel">
+            <label for="travel">Travel</label>
+            <br><br>
+
+            <!-- Submit Button -->
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <p>Note: This form is just a sample and does not actually submit data anywhere.</p>      
+    <p>Thank you for visiting!</p>
+    <footer>
+        <p>&copy; 2025 Week Two Assignment</p>
+    </footer>
+</body>
+</html>
